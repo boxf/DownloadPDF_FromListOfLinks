@@ -17,7 +17,7 @@ public class ReadExcelAndDownloadDoc {
         this.readExcel = new ReadExcel(excelPath);
         int i;
         //Enter from which line until which line you want to download the files
-        for (i=400; i<450; i++) {
+        for (i=1; i<2; i++) {
             String title = ReadExcel.data.get(i).get(0); //0 is the column in which is entered the Title of the book
             String oldURL = ReadExcel.data.get(i).get(3); //3 is the column in which is entered the link to the web page of the book
             System.out.println("Launching download of file "+title+"...");
